@@ -11,7 +11,7 @@ var imageminOptipng = require('imagemin-optipng');
 var imageminSvgo = require('imagemin-svgo');
 var plur = require('plur');
 
-module.exports = (plugins, opts) => {
+module.exports = function(plugins, opts) => {
 	if (typeof plugins === 'object' && !Array.isArray(plugins)) {
 		opts = plugins;
 		plugins = null;
